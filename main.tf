@@ -1,3 +1,8 @@
+provider "aws" {
+  region="ap-south-1"
+}
+
+
 resource "aws_vpc" "tfb" {
   cidr_block           = "${var.cidr}"
   enable_dns_hostnames = "${var.enable_dns_hostnames}"
